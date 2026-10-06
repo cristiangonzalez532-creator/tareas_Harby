@@ -1,7 +1,12 @@
 package POO;
 
+import POO.Banco.App.Appbanco;
+import POO.Dominio.Banco;
+import POO.Dominio.CuentaBancaria;
+import POO.Dominio.Persona;
+
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Carro logan = new Carro("renault", 2015, "automovil", "xyz789", "bogota", 1600, "mecanica", "gasolina", 4, "carlos");
         Carro mazda3 = new Carro("mazda", 2018, "automovil", "abc123", "medellin", 2000, "automatica", "gasolina", 4, "laura");
         Carro sandero = new Carro("renault", 2016, "automovil", "def456", "cali", 1400, "mecanica", "gasolina", 5, "andres");
@@ -69,6 +74,50 @@ public class Main {
 
 
 
+
+
+
+
+
     }
+
+    // appbanco
+Appbanco bancolombia = new Appbanco("Bancolombia personas", 3.12 , "Grupo bancolombia");
+Appbanco appNequi = new Appbanco("Nequi", 4.80, "Bancolombia");
+Appbanco appDavivienda = new Appbanco("Davivienda Colombia", 3.45, "Banco Davivienda");
+Appbanco appNu = new Appbanco("Nu Colombia", 4.70, "Nu Holdings");
+Appbanco appBbva = new Appbanco("BBVA Colombia", 3.80, "Grupo BBVA");
+
+// personas
+
+
+Persona persona1 = new Persona("Carlos Mendoza", "1017245890", "carlos.mendoza@email.com", 28);
+Persona persona2 = new Persona("Ana María Gómez", "1036985214", "ana.gomez@email.com", 34);
+Persona persona3 = new Persona("David Restrepo", "1152439876", "david.restrepo@email.com", 22);
+Persona persona4 = new Persona("Laura Sofía Torres", "1020456789", "laura.torres@email.com", 29);
+Persona persona5 = new Persona("Mateo Jaramillo", "1037654321", "mateo.jaramillo@email.com", 41);
+Persona persona6 = new Persona("Valentina Ríos", "1015987654", "valentina.rios@email.com", 25);
+Persona persona7 = new Persona("Santiago Morales", "1128456123", "santiago.morales@email.com", 31);
+Persona persona8 = new Persona("Camila Vargas", "1040123789", "camila.vargas@email.com", 27);
+Persona persona9 = new Persona("Alejandro Castro", "1018987321", "alejandro.castro@email.com", 38);
+Persona persona10 = new Persona("Mariana Ospina", "1039876543", "mariana.ospina@email.com", 20);
+
+
+// bancos
+
+   Banco Bancolombia = new Banco("Bancolombia", "Juan Carlos Mora");
+    Banco nequi = new Banco("Nequi", "Andrés Vásquez");
+  Banco davivienda = new Banco("Davivienda", "Javier Suárez Espinoza");
+    Banco nu = new Banco("Nu Colombia", "Marcelo Morales");
+    Banco bbva = new Banco("BBVA Colombia", "Mario Pardo Bayona");
+
+    //cuentabancaria
+    CuentaBancaria cuentaMarianaOspina = new CuentaBancaria("6471342516" , 100000 , "vagai123" , "ahorros" , persona10 , nequi );
+
+
+
+    // informacion inicial mostrar
+
+
 
 }
